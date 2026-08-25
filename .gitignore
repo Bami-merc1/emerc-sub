@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+.next/
+dist/
+build/
+.turbo/
+
+# Environment variables — NEVER commit real secrets
+.env
+.env.local
+.env.*.local
+apps/api/.env
+apps/web/.env.local
+
+# Keep the example templates (safe, no real secrets)
+!.env.example
+
+# Prisma
+apps/api/prisma/*.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# Misc
+*.pem
+.eslintcache
